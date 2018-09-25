@@ -24,3 +24,7 @@ Use devtoolset-7.
     scl enable devtoolset-7 bash
 
 Run /usr/bin/start or go to $HOME/blender-git/.
+
+## Source
+
+[github.com/mattias-ohlsson/docker-centos-blender-2.8-builder](https://github.com/mattias-ohlsson/docker-centos-blender-2.8-builder)
