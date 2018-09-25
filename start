@@ -1,0 +1,19 @@
+#!/bin/bash
+
+yum -y update
+
+cd $HOME/blender-git/blender
+make update
+
+make deps
+make full
+
+cd /
+rm -f blender-*.tar.gz
+cpack -G TGZ --config $HOME/blender-git/build_linux_full/CPackConfig.cmake
+
+if [ -f blender-*.tar.gz ]; then
+	filename=$(ls blender-*.tar.gz)
+	echo "Use docker cp to copy the package:"
+	echo "  docker cp $HOSTNAME:/$filename ./"
+fi
