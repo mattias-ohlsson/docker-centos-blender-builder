@@ -17,7 +17,7 @@ Repeat:
 
 ### Manual build
 
-    docker run --storage-opt size=20G mattiasohlsson/centos-blender-2.8-builder bash
+    docker run -it --storage-opt size=20G mattiasohlsson/centos-blender-2.8-builder bash
 
 Use devtoolset-7.
 
