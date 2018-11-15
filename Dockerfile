@@ -9,9 +9,10 @@ RUN yum update -y && yum clean all
 
 # Install packages
 RUN yum -y install centos-release-scl epel-release \
- && yum -y install autoconf automake bison cmake3 flex gcc git make patch \
-    python36 python-setuptools subversion tcl yasm devtoolset-7-gcc-c++ \
-    libtool libX11-devel libXcursor-devel libXi-devel libXinerama-devel \
+ && yum -y install autoconf automake bison cmake3 flex gcc git \
+    jack-audio-connection-kit-devel make patch pcre-devel python36 \
+    python-setuptools subversion tcl yasm devtoolset-7-gcc-c++ libtool \
+    libX11-devel libXcursor-devel libXi-devel libXinerama-devel \
     libXrandr-devel libXt-devel mesa-libGLU-devel zlib-devel \
  && yum clean all
 
