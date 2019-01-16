@@ -38,7 +38,6 @@ RUN mkdir $HOME/blender-git \
  && cd $HOME/blender-git \
  && git clone https://git.blender.org/blender.git \
  && cd $HOME/blender-git/blender \
- && git checkout blender2.8 \
  && git submodule update --init --recursive \
  && git submodule foreach git checkout master \
  && git submodule foreach git pull --rebase origin master
